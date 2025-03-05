@@ -100,7 +100,7 @@ def create_sale(sale: Sales = Body(...)) -> dict:
 
 
 
-
+# Create Comment 
 @app.put("/modifiedSale/{id}", tags=["Sales"], response_model = dict, status_code = status.HTTP_201_CREATED)
 def modified_sale(id:int, sale:Sales) -> dict:
     for saleItem in salesList:
